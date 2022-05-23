@@ -1,0 +1,14 @@
+*{
+   box-sizing: border-box;
+}
+body{
+   margin:0px;
+   
+   font-family: 'Josefin Sans';
+}
+button{
+   font-family: 'Josefin Sans';
+}
+input{
+   font-family: 'Josefin Sans';
+}

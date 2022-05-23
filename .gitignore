@@ -1,0 +1,5 @@
+node_modules
+index.js
+database.js
+dist
+.parcel-cache
