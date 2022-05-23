@@ -1,4 +1,5 @@
 import { Router } from "@vaadin/router";
+import { state } from "./state";
 
 const router = new Router(document.querySelector(".root"));
 router.setRoutes([
@@ -9,5 +10,12 @@ router.setRoutes([
 ]);
 
 window.onpopstate = function (event) {
-	console.log(history);
+	if (location.pathname == "/chat-page" && state.getState().myId === "") {
+		Router.go("/");
+	} else if (
+		location.pathname == "/create-room" &&
+		state.getState().myId === ""
+	) {
+		Router.go("/");
+	}
 };

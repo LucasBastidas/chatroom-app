@@ -57,7 +57,7 @@ export class createRoom extends HTMLElement {
       .gral-container{
          display: flex;
          flex-direction: column;
-         padding: 0px 40px 0px 40px;
+         padding: 0px 50px 0px 50px;
       }
       @media(min-width:960px){
          .gral-container{
@@ -79,8 +79,7 @@ export class createRoom extends HTMLElement {
          width: 150px;
          cursor: pointer;
          border-radius: 4px;
-         background-color: #c3dfde;
-         
+         background-color: #c3dfde;         
       }
       .button-entrar{
          margin-top:50px;

@@ -37,7 +37,7 @@ class Newhome extends HTMLElement {
       .gral-container{
          display: flex;
          flex-direction: column;
-         padding: 0px 40px 0px 40px;
+         padding: 0px 50px 0px 50px;
          height:100vh;
       }
       @media(min-width:960px){
@@ -82,6 +82,13 @@ class Newhome extends HTMLElement {
       }
       .button-registrar{
          height:40px;
+         box-shadow: #094c66 4px 4px 0xp;
+         border-radius:8px;
+         transition: transform 200ms, box-shadow 200ms;
+      }
+      .button-registrar:active{
+         transform: translateY(4px) translateX(4px);
+         box-shadow:#094c66 0px 0px 0px;
       }
       `;
 		this.innerHTML = `

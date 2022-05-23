@@ -1,6 +1,5 @@
 import { Router } from "@vaadin/router";
 import { state } from "../../state";
-import { API_BASE_URL } from "../../state";
 export class Register extends HTMLElement {
 	connectedCallback() {
 		state.subscribe(() => {
@@ -39,10 +38,17 @@ export class Register extends HTMLElement {
       .gral-container{
          display: flex;
          flex-direction: column;
-         padding: 0px 40px 0px 40px;
+         padding: 0px 50px 0px 50px;
+      }
+      @media(min-width:960px){
+         .gral-container{
+            display: flex;
+            flex-direction: column;
+            padding: 0px 300px 0px 300px;
+         }
       }
       .header{
-         height: 80px;
+         height: 100px;
          background-color:#b8e3cf;
       }
       .title{
@@ -65,6 +71,13 @@ export class Register extends HTMLElement {
       .button{
          margin-top:50px;
          height:40px;
+         box-shadow: #094c66 4px 4px 0xp;
+         border-radius:8px;
+         transition: transform 200ms, box-shadow 200ms;
+      }
+      .button:active{
+         transform: translateY(4px) translateX(4px);
+         box-shadow:#094c66 0px 0px 0px;
       }
       `;
 		this.innerHTML = `

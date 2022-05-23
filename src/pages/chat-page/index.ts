@@ -31,7 +31,7 @@ export class ChatPage extends HTMLElement {
       .gral-container{
          display: flex;
          flex-direction: column;
-         padding: 0px 40px 0px 40px;
+         padding: 0px 50px 0px 50px;
       }
       @media(min-width:960px){
          .gral-container{
