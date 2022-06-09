@@ -101,7 +101,7 @@ export class ChatPage extends HTMLElement {
 		this.innerHTML = `
       <header class="header"></header>
       <div class="gral-container">   
-      <h2 class="title">CHAT    ${state.data.roomShortId}</h2>
+      <h2 class="title">CHATROOM    ${state.data.roomShortId}</h2>
       <div class="chat-container">
          ${this.messages
 						.map((m) => {

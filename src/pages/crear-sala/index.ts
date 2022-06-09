@@ -185,10 +185,6 @@ export class createRoom extends HTMLElement {
 
 		this.appendChild(style);
 		this.addListeners();
-		// window.onpopstate = function (event) {
-		// 	event.preventDefault();
-		// 	Router.go("/");
-		// };
 	}
 }
 customElements.define("x-create-room", createRoom);
