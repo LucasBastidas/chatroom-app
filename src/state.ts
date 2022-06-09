@@ -22,25 +22,14 @@ const state = {
 		return this.data;
 	},
 	init() {
-		// if (
-		// 	localStorage.getItem("email") &&
-		// 	localStorage.getItem("name") &&
-		// 	localStorage.getItem("id")
-		// ) {
-		// 	this.data.myId = localStorage.getItem("id");
-		// 	this.data.nombre = localStorage.getItem("name");
-		// 	this.data.email = localStorage.getItem("email");
-
-		// 	// this.data.rtdbRoomId = localStorage.getItem("rtdbRoomId");
-		// }
 		console.log("esta funcionando", this.data);
 		const chatRoomRef = rtdb.ref("/rooms/" + this.data.rtdbRoomId);
 		chatRoomRef.on("value", (snapshot) => {
 			const currentState = this.getState();
-			console.log("probando");
+			// console.log("probando");
 			const messagesFromServer = snapshot.val();
 			const listMessages = map(messagesFromServer.mensajes);
-			console.log("cacona", listMessages);
+			// console.log( listMessages);
 			currentState.messages = listMessages;
 			this.setState(currentState);
 		});
